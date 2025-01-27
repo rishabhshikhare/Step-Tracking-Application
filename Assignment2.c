@@ -209,7 +209,7 @@ User *CreateUserTree() // Creates entire user tree
         for (i = 0; i < NUMBEROFINDIVIDUALS; i++)
         {
             fscanf(file_ptr, "%d", &id);
-            fscanf(file_ptr, "%49s", name);
+            fscanf(file_ptr, "%49s", name); //maximum 49 characters can be scanned
             fscanf(file_ptr, "%d", &age);
             fscanf(file_ptr, "%d", &daily_step_goal);
             for (j = 0; j < NUMBEROFDAYSINWEEK; j++)
